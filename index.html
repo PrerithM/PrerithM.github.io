@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerith M - See the whole. Strip the noise. Own the core.</title>
+    <meta name="description"
+        content="Personal website of Prerith M, Student Builder, AI Explorer, Applied Finance & FinTech.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Three.js for 3D Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+</head>
+
+<body>
+    <!-- 3D Canvas Background -->
+    <canvas id="webgl-canvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <div class="main-wrapper">
+        <!-- Proper Header / Navigation -->
+        <header class="main-header fade-down">
+            <div class="header-inner">
+                <a href="#" class="nav-brand magnetic" data-strength="15">
+                    Prerith.M
+                </a>
+                <nav class="nav-links">
+                    <a href="#about" class="magnetic" data-strength="20">About</a>
+                    <a href="#builds" class="magnetic" data-strength="20">Builds</a>
+                    <a href="#recognition" class="magnetic" data-strength="20">Recognition</a>
+                    <a href="#contact" class="magnetic" data-strength="20">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title reveal-text">
+                    <span class="line"><span>See the whole.</span></span>
+                    <span class="line"><span>Strip the noise.</span></span>
+                    <span class="line"><span>Own the core.</span></span>
+                </h1>
+                <div class="hero-meta fade-up delay-1">
+                    <p class="hero-subtitle">Student Builder · AI Explorer · Applied Finance & FinTech</p>
+                    <div class="scroll-indicator">
+                        <span class="scroll-line"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section (Golden Ratio Layout) -->
+        <section id="about" class="section">
+            <div class="golden-grid">
+                <div class="golden-minor fade-right">
+                    <h2 class="section-title">01<br>Profile</h2>
+                </div>
+                <div class="golden-major fade-left">
+                    <p class="lead-text">
+                        BBA student in Applied Finance with FinTech, passionate about making AI useful beyond the
+                        computer science classroom.
+                    </p>
+                    <p class="body-text">
+                        I'm a technology-oriented builder rather than a traditional software engineer. I use AI-assisted
+                        development to turn ideas into working products while focusing on system design, technology
+                        selection, databases, APIs, integrations, and product decisions. I've built across AI, robotics,
+                        computer vision, mobile products, and civic technology.
+                    </p>
+                    <div class="skills-grid stagger-fade-up">
+                        <div class="skill-category">
+                            <h3>Core</h3>
+                            <p>Python, JavaScript, AI-assisted development, System design</p>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Ecosystem</h3>
+                            <p>Cloudflare Workers, Next.js, React Native, Raspberry Pi, GCP, Ollama</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selected Builds Section (Golden Ratio Layout) -->
+        <section id="builds" class="section">
+            <div class="golden-grid reverse">
+                <div class="golden-minor fade-left">
+                    <h2 class="section-title">02<br>Builds</h2>
+                </div>
+                <div class="golden-major">
+                    <div class="projects-list stagger-fade-up">
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>Pothole Tracker</h3>
+                                <span class="project-meta">Civic AI · 2025–Present</span>
+                            </div>
+                            <p class="project-desc">Designed and iterated an AI-powered civic reporting system
+                                end-to-end—from a self-hosted Telegram prototype to a WhatsApp + Cloudflare Workers
+                                version. Funded by Govt. of India's INSPIRE Awards.</p>
+                        </article>
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>Advanced Rover</h3>
+                                <span class="project-meta">AI + Robotics · 1st–2nd PUC</span>
+                            </div>
+                            <p class="project-desc">Designed and integrated an AI-enabled Raspberry Pi rover with camera
+                                streaming, web control, real-time communication, and computer vision.</p>
+                        </article>
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>Codes of Memory</h3>
+                                <span class="project-meta">Vision Experiments · 1st–2nd PUC</span>
+                            </div>
+                            <p class="project-desc">Explored Raspberry Pi computer vision, object inspection, visual
+                                reasoning, and generative 3D workflows by connecting different AI components.</p>
+                        </article>
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>Resume Builder</h3>
+                                <span class="project-meta">Mobile Product · 1st–2nd PUC</span>
+                            </div>
+                            <p class="project-desc">Built an offline-first mobile resume/profile product with structured
+                                data, dynamic education fields, and on-device PDF generation and sharing.</p>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Recognition -->
+        <section id="recognition" class="section">
+            <div class="golden-grid">
+                <div class="golden-minor fade-right">
+                    <h2 class="section-title">03<br>Recognition</h2>
+                </div>
+                <div class="golden-major">
+                    <div class="projects-list stagger-fade-up">
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>INSPIRE Award (₹10,000)</h3>
+                                <span class="project-meta">Dept. of Science & Technology</span>
+                            </div>
+                            <p class="project-desc">Awarded for designing an innovative AI-powered civic reporting system, Pothole Tracker.</p>
+                        </article>
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>Lead Member, Organizing Committee</h3>
+                                <span class="project-meta">Unmesha Physics Club · 2025–26</span>
+                            </div>
+                            <p class="project-desc">Spearheaded the organizing committee, coordinating events and fostering a strong physics community.</p>
+                        </article>
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>Vice President</h3>
+                                <span class="project-meta">Rotary Interactive Club · 9th Std</span>
+                            </div>
+                            <p class="project-desc">Served as Vice President, leading interactive initiatives, managing team projects, and organizing community activities.</p>
+                        </article>
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>ATL Labs Ambassador</h3>
+                                <span class="project-meta">Ideal Jawa Rotary School · 9th Std</span>
+                            </div>
+                            <p class="project-desc">Acted as an ambassador to foster a culture of innovation, tinkering, and hands-on technical learning among peers.</p>
+                        </article>
+
+                        <article class="project-item hover-reveal">
+                            <div class="project-info">
+                                <h3>Software Developer Certifications</h3>
+                                <span class="project-meta">CuriousJr · Nov–Dec 2022</span>
+                            </div>
+                            <p class="project-desc">Achieved official certifications in Python and JavaScript development, building a strong foundation in programming and logic.</p>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Improved Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="contact-wrapper fade-up">
+                <h2 class="contact-heading">Let's build<br>the future.</h2>
+
+                <div class="contact-grid">
+                    <a href="mailto:prerithm87@gmail.com" class="contact-card magnetic" data-strength="30">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">prerithm87@gmail.com</span>
+                        <div class="contact-arrow">↗</div>
+                    </a>
+
+                    <a href="https://github.com/PrerithM" target="_blank" rel="noopener noreferrer"
+                        class="contact-card magnetic" data-strength="30">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">@PrerithM</span>
+                        <div class="contact-arrow">↗</div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/prerithm/" target="_blank" rel="noopener noreferrer"
+                        class="contact-card magnetic" data-strength="30">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">/in/prerithm</span>
+                        <div class="contact-arrow">↗</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer fade-up">
+            <div class="footer-content">
+                <p>&copy; <span id="year"></span> Prerith M.</p>
+                <p>Designed with Swiss precision.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
